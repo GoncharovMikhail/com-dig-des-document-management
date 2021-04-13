@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.dig.des.document.management.entity.support.ResetPasswordTokenEntity</OriginalElement>
+  <nodes>
+    <node x="0.0" y="139.0">com.dig.des.document.management.entity.document.CatalogEntity</node>
+    <node x="542.2214285714285" y="139.0">com.dig.des.document.management.entity.document.FileEntity</node>
+    <node x="696.2214285714285" y="139.0">com.dig.des.document.management.entity.user.UserEntity</node>
+    <node x="252.2006141248721" y="213.0">com.dig.des.document.management.entity.support.ResetPasswordTokenEntity</node>
+    <node x="500.47142857142853" y="0.0">org.hibernate.envers.Audited</node>
+    <node x="199.22142857142856" y="139.0">com.dig.des.document.management.entity.security.RoleEntity</node>
+    <node x="353.22142857142853" y="139.0">com.dig.des.document.management.entity.document.DocumentEntity</node>
+    <node x="162.4714285714286" y="0.0">com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.dig.des.document.management.entity.document.DocumentEntity" target="com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity">
+      <point x="-42.25" y="-14.5" />
+      <point x="395.47142857142853" y="89.0" />
+      <point x="321.4714285714286" y="89.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.document.CatalogEntity" target="com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity">
+      <point x="-40.0" y="-14.5" />
+      <point x="40.0" y="89.0" />
+      <point x="194.2714285714286" y="89.0" />
+      <point x="-127.19999999999999" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.user.UserEntity" target="com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity">
+      <point x="-33.5" y="-14.5" />
+      <point x="729.7214285714285" y="59.0" />
+      <point x="448.6714285714286" y="59.0" />
+      <point x="127.19999999999999" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.security.RoleEntity" target="org.hibernate.envers.Audited">
+      <point x="33.5" y="-14.5" />
+      <point x="299.72142857142853" y="109.0" />
+      <point x="532.5714285714286" y="109.0" />
+      <point x="-21.399999999999977" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.document.DocumentEntity" target="org.hibernate.envers.Audited">
+      <point x="42.25" y="-14.5" />
+      <point x="479.97142857142853" y="119.0" />
+      <point x="553.9714285714285" y="119.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.document.FileEntity" target="com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity">
+      <point x="-33.5" y="-14.5" />
+      <point x="575.7214285714285" y="79.0" />
+      <point x="385.0714285714286" y="79.0" />
+      <point x="63.60000000000002" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.security.RoleEntity" target="com.dig.des.document.management.entity.audit.PersistOpsAuthorRecordingEntity">
+      <point x="-33.5" y="-14.5" />
+      <point x="232.72142857142856" y="89.0" />
+      <point x="257.87142857142857" y="89.0" />
+      <point x="-63.60000000000002" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.document.FileEntity" target="org.hibernate.envers.Audited">
+      <point x="33.5" y="-14.5" />
+      <point x="642.7214285714285" y="69.0" />
+      <point x="575.3714285714285" y="69.0" />
+      <point x="21.399999999999977" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.document.CatalogEntity" target="org.hibernate.envers.Audited">
+      <point x="40.0" y="-14.5" />
+      <point x="120.0" y="99.0" />
+      <point x="511.1714285714286" y="99.0" />
+      <point x="-42.799999999999955" y="14.5" />
+    </edge>
+    <edge source="com.dig.des.document.management.entity.user.UserEntity" target="org.hibernate.envers.Audited">
+      <point x="33.5" y="-14.5" />
+      <point x="796.7214285714285" y="49.0" />
+      <point x="596.7714285714286" y="49.0" />
+      <point x="42.80000000000007" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5551136363636363" x="976.2845445240533" y="303.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
