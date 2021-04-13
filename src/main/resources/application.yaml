@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    url: url
+    username: postgres
+    password: password
+  jpa:
+    generate-ddl: true
+  flyway:
+    enabled: false
