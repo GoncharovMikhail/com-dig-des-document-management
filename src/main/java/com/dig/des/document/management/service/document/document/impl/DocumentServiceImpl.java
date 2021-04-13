@@ -1,8 +1,8 @@
-package com.dig.des.document.management.service.document.impl;
+package com.dig.des.document.management.service.document.document.impl;
 
 import com.dig.des.document.management.entity.document.DocumentEntity;
 import com.dig.des.document.management.repository.document.DocumentRepository;
-import com.dig.des.document.management.service.document.DocumentService;
+import com.dig.des.document.management.service.document.document.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
