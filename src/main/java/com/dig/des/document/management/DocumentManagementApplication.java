@@ -6,7 +6,7 @@ import org.springframework.data.envers.repository.support.EnversRevisionReposito
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 // TODO: 13.04.2021 что значит просотр списка(поиск)?
-// TODO: 13.04.2021 про настройку типов администратором ничего не понял.
+// TODO: 13.04.2021 про настройку типов администратором ничего не понятно.
 @SpringBootApplication
 @EnableJpaRepositories(repositoryFactoryBeanClass = EnversRevisionRepositoryFactoryBean.class)
 public class DocumentManagementApplication {

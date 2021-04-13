@@ -14,7 +14,7 @@ public interface UserRepository extends RevisionRepository<UserEntity, Long, Lon
     @EntityGraph(attributePaths = {"roles"})
     UserEntity findOneByUsername(String username);
 
-    UserEntity findOneByEmail(String username);
+    UserEntity findOneByEmail(String email);
 
     UserEntity findOneByEmailOrUsername(String email, String username);
 
