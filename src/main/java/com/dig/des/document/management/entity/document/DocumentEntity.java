@@ -7,6 +7,7 @@ import org.springframework.data.history.RevisionMetadata;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Set;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -47,6 +48,9 @@ public class DocumentEntity extends PersistOpsAuthorRecordingEntity<Long> {
     @JoinColumn(name = "catalog_id", nullable = false)
     @NonNull
     private CatalogEntity catalog;
+
+    @OneToMany(mappedBy = "id", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<FileEntity> files;
 
     @Transient
     private RevisionMetadata<Long> version;

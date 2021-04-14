@@ -1,13 +1,14 @@
 package com.dig.des.document.management.service.user.impl;
 
 import com.dig.des.document.management.entity.user.UserEntity;
-import com.dig.des.document.management.exception.CantSaveUserException;
 import com.dig.des.document.management.repository.user.UserRepository;
 import com.dig.des.document.management.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
@@ -32,9 +33,9 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void saveUser(UserEntity userEntity) throws CantSaveUserException {
+    public void saveUser(UserEntity userEntity) {
         if (!isUserValidForSaving(userEntity)) {
-            throw new CantSaveUserException();
+            throw new RuntimeException();
         }
         userRepository.save(userEntity);
     }

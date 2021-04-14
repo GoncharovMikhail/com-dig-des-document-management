@@ -9,3 +9,4 @@ spring:
     generate-ddl: true
   flyway:
     enabled: false
+  #todo 14.04.2021 (мне) гаписать проприс для JavaMailSender'a.

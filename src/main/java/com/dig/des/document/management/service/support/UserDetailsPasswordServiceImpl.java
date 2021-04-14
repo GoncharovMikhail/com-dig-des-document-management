@@ -12,8 +12,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsPasswordService;
 import org.springframework.stereotype.Service;
-
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 // TODO: 13.04.2021 а как им пользоваться? Я думаю, что на вход надо принимать айдишник юзера и новый пароль, а тут юзердетейлс =(
 @Service
@@ -53,7 +52,7 @@ public class UserDetailsPasswordServiceImpl implements UserDetailsPasswordServic
         /* TODO: 13.04.2021 Вообще по контракту, fullyAuthenticatedNewAuthentication может быть и null -
             это когда authenticationManager не может опредиться, суппортит ли он данный вид автонтикации или нет. Что тогда делать? */
         if (fullyAuthenticatedNewAuthentication == null) {
-
+            //
         }
         SecurityContextHolder.getContext().setAuthentication(fullyAuthenticatedNewAuthentication);
 

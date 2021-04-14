@@ -5,8 +5,10 @@ import com.dig.des.document.management.repository.document.DocumentRepository;
 import com.dig.des.document.management.service.document.document.DocumentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class DocumentServiceImpl implements DocumentService {
     private final DocumentRepository documentRepository;
 
@@ -16,7 +18,23 @@ public class DocumentServiceImpl implements DocumentService {
     }
 
     @Override
+    public void saveDocument(DocumentEntity documentEntity) {
+        documentRepository.save(documentEntity);
+    }
+
+    @Override
     public DocumentEntity findOneByTitle(String title) {
         return documentRepository.findOneByTitle(title);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        documentRepository.deleteById(id);
+    }
+
+    @Override
+    public DocumentEntity findOneById(Long id) {
+        return documentRepository.findById(id)
+            .orElseThrow(RuntimeException::new);
     }
 }
