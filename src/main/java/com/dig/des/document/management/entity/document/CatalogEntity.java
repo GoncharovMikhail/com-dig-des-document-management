@@ -37,7 +37,7 @@ public class CatalogEntity extends PersistOpsAuthorRecordingEntity<Long> {
     private Set<DocumentEntity> documents;
 
     /* TODO: 13.04.2021 два следующих поля - полнейший ужас.
-        Разве хранить такие сложные конструкции в реляционной бд - хорошая идея?
+        Разве хранить такие сложные конструкции(когда энтити ссылается на себя) в реляционной бд - хорошая идея?
         https://thorben-janssen.com/self-referencing-associations/ - оттуда взял пример. */
     @ManyToOne(fetch = LAZY)
     private CatalogEntity parentId;
